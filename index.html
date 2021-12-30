@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+
+        <div id="weathercon">
+            <i class="fas fa-sun" style="color: yellow;"></i>
+            Pune, India
+        </div>
+
+        <div class="info">
+            <h2 class="location"><i class="fas fa-street-view" style="color:white"></i>{%location},{%country%}</h2>
+        </div>
+
+        <p id="date">WED | NOV 19 | 10:49AM</p>
+        <h1 class="temp">{%tempVal%}&deg;C/h1>
+            <h3 class="temp_min_max">Min {%tempmin%}&deg;C | Max {%tempmax%}&deg;C</h3>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
