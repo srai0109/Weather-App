@@ -20,7 +20,7 @@ const replaceVal = (tempVal, orgVal) => {
 
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
-        requests("https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=e09754f93084255d2974d58fdba5f7bc")
+        requests("https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=")
             .on("data", (chunk) => { //data->this event is fired when there is data is available to read
 
                 const objdata = JSON.parse(chunk);
